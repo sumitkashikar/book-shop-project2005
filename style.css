@@ -155,6 +155,13 @@ option {
     height: 35px;
     margin-bottom: 5px;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* Book Section */
 .book-section {
@@ -248,7 +255,31 @@ option {
     border-radius: 8px;
     margin-top: 15px;
 }
-
+     /* FOOTER */
+footer {
+    width: 100%;
+    padding: 10px;
+}
+.footer{
+    background-color: #062447;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.footer-tex {
+    margin-bottom: 20px;
+}
+.footer-tex h2 {
+    font-size: 20px;
+}
+.footer-tex p {
+    font-size: 14px;
+    margin: 0;
+}
 
 
 
@@ -329,11 +360,108 @@ option {
 
 
 
+           /* Cart Page */
+
+.main-cart-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid lightgray;
+}
+.main-cart-name-1 {
+    display: flex;
+}
+.main-cart-name-1 h2 {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.main-cart-name-1 span {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-weight:bolder;
+    text-align: center;
+    background-color: red;
+    padding-top: 2px;
+    border-radius: 100%;
+    color: white;
+    margin-top: 3px;
+}
+.main-cart-name i {
+    font-size: 24px;
+    margin-left: 0cm;
+    color: black;
+}
+.main-cart-con {
+    width: 277px;
+    margin: auto;
+    padding-top: 170px;
+    /* background-color: #F87C00; */
+    text-align: center;
+}
+.main-cart-con h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.main-cart-text {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 80px;
+}
+
+.main-cart-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.mci {
+    width: 30%;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.mci-ico {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mci-ico img {
+    width: 22px;
+}
+.mci-titl {
+    margin-top: 8px;
+    color: gray;
+    font-size: 12px;
+}
+.main-cart-butt {
+    width: 100%;
+    background-color: #ffd700;
+    text-align: center;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
 
 
 
 
-
+.main-about {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.main-about h2 {
+    font-size: 22px;
+}
 
 
 
@@ -424,6 +552,10 @@ option {
     }
     .bs-card {
         width: 33%;
+    }
+    /* FOOTER */
+    .footer{
+        flex-direction: row;
     }
 
 
@@ -531,6 +663,10 @@ option {
     .option-lang {
         display: none;
     }
+    .option-cart {
+        display: none;
+    }
+
      /* Carousel */
     .slid-lap {
         display: flex;
@@ -553,6 +689,10 @@ option {
     }
     .bs-card {
         width: 16.2%;
+    }
+    /* FOOTER */
+    .footer-tex {
+        width: 20%;
     }
 
 
