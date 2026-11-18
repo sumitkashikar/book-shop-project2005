@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="container-fluid" style="padding: 12px;">
+
+            <div class="row m-0">
+
+                <!-- LOGO -->
+                <div class="col-6 col-md-5 col-lg-4 p-0 order-md-1">
+                    <img src="assets/icons/logo.png" alt="logo" class="logo">
+                </div>
+
+                <!-- LAGIN MANU -->
+                <div class="col-6 col-md-2 col-lg-3 order-md-3 p-0 manu-login">  
+                    
+                    <div class="Lang">
+                        <img src="assets/icons/flag.png" alt="Lang" class="Lang-img">
+                        <select name = "city" class="Lang-sel">
+                            <option value = "en">EN</option>
+                            <option value = "HI">HI</option>
+                            <option value = "TU" >TA</option>
+                            <option value = "KN">KN</option>
+                        </select>
+                    </div>
+
+                    <div >
+                        <a href="login.html" class="login">
+                            <img src="assets/icons/login.png" alt="login" class="login-img">
+                            <span style="color: white;">Login</span>
+                        </a>
+                    </div>
+
+                    
+                    <nav class="navbar navbar-dark manu">
+
+                        <button class="navbar-toggler manu" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+                                <img src="assets/icons/menu (1).png" alt="manu" style="width: 25px;">
+                        </button>
+                    </nav>
+
+                    <div >
+                        <a href="#" class="cart">
+                            <img src="assets/icons/cart.png" alt="cart" class="cart-img">
+                            <span style="color: white; margin-left: 3px;">Cart</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- SEARCH BAR -->
+                <div class="col-12 col-md-5 col-lg-5 order-md-2 mt-2 p-0 cont-sear">
+
+                    <form class="search">
+                        <input type="search" placeholder="Search for books...">
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVBAR -->
+    <nav class="collapse navbar-bott" id="navbarToggleExternalContent">
+
+        <ul class="option-list">
+
+            <li class="option">
+                <a href="index.html">
+                    <img src="assets/icons/home (1).png" alt="home" class="option-ico">
+                    <span class="option-name">Home</span>
+                </a>
+            </li>
+
+            <li class="option">
+                <a href="seller.html">
+                    <img src="assets/icons/star.png" alt="star" class="option-ico">
+                    <span class="option-name">Best Sellers</span>
+                </a>
+            </li>
+
+            <li class="option">
+                <a href="offer.html">
+                    <img src="assets/icons/offers.png" alt="offers" class="option-ico">
+                    <span class="option-name">Offers</span>
+                </a>
+            </li>
+
+            <li class="option">
+                <div class="dropdown ">
+                    <a class="btn dropdown-toggle p-0 " role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/icons/category.png" alt="category" class="option-ico">
+                        <span class="option-name">Categeries</span>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="margin-top: 14px;">
+                        <a class="dropdown-item" href="kids.html">Kids Books</a>
+                        <a class="dropdown-item" href="Motivation.html">Motivational</a>
+                        <a class="dropdown-item" href="self_help.html">Self Help</a>
+                        <a class="dropdown-item" href="health.html">Health & Wellness</a>
+                        <a class="dropdown-item" href="technology.html">Technology</a>
+                        <a class="dropdown-item" href="art.html">Arts & Crafts</a>
+                        <a class="dropdown-item" href="current.html">Current Affairs</a>
+                        <a class="dropdown-item" href="ficton.html">Fiction</a>
+                        <a class="dropdown-item" href="academic.html">Academic</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="option option-lang">
+                <img src="assets/icons/flag.png" alt="Lang" class="Lang-img">
+                <select name = "city" class="Lang-sel">
+                    <option value = "en">EN</option>
+                    <option value = "HI">HI</option>
+                    <option value = "TU" >TA</option>
+                    <option value = "KN">KN</option>
+                </select>
+            </li>
+
+            <li class="option">
+                <a href="about.html">
+                    <img src="assets/icons/about.png" alt="about" class="option-ico">
+                    <span class="option-name">About Us</span>
+                </a>
+            </li>
+
+            <li class="option">
+                <a href="contact.html">
+                    <img src="assets/icons/contact.png" alt="contact" class="option-ico">
+                    <span class="option-name">Contact Us</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    </header>
+
+
+
+    <div class="main-product">
+
+        <!-- mp = main-product -->
+
+        <img src="assets/book images/kid6.jpg" class="mp-img">
+
+        <div class="mp-detal">
+
+            <div class="mp-left">
+                <!-- mpl = mp-left -->
+
+                <div class="mpl-titl">
+
+                    <h1>Dog Days (Diary of a Wimpy Kid book 4)</h1>
+                    <p>by <span style="color: rgb(33, 116, 226);">jems</span></p>
+
+                    
+                    <div class="mpl-titl-rating">
+
+                        <span>(120 reviews)</span>
+
+                        <input type="radio" id="star1"/>
+                        <label for="star1"><i class="fa-solid fa-star"></i></label>
+
+                        <input type="radio" id="star2"/>
+                        <label for="star2"><i class="fa-solid fa-star"></i></label>
+
+                        <input type="radio" id="star3"/>
+                        <label for="star3"><i class="fa-solid fa-star"></i></label>
+
+                        <input type="radio" id="star4"/>
+                        <label for="star4"><i class="fa-solid fa-star"></i></label>
+
+                        <input type="radio" id="star5"/>
+                        <label for="star5"><i class="fa-solid fa-star"></i></label>
+                        
+                    </div> 
+                    
+                </div>
+
+                <div class="mpl-pri">
+
+                    <div class="mpl-price">
+                        <span class="mpl-price-a">₹219</span>
+                        <span class="mpl-price-b">₹399</span>
+                        <span class="mpl-price-c">70% off</span>
+                    </div>
+
+                    <span style="color: green;font-weight: 500;margin: 0;"><i class="fa-solid fa-circle-check"></i>  In Stock</span> 
+                    <span style="font-weight: 500;margin: 0;"><i class="fa-solid fa-circle" style="font-size: 5px;"></i> Ships in 1-2 days</span>
+
+                    <div class="mpl-qua">
+                        <span style="font-weight: 700;">Quantity:</span>
+                        <select name = "city" class="mpl-qua-num">
+                            <option value = "1">1</option>
+                            <option value = "2">2</option>
+                            <option value = "3" >3</option>
+                            <option value = "4">4</option>
+                            <option value = "5">5</option>
+                            <option value = "6">6</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="mpl-butt">
+
+                    <button class="mpl-butt-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+
+                    <button class="mpl-butt-wish">
+                        <i class="fa-solid fa-heart"></i>
+                        Add to Wishlist
+                    </button>
+
+                </div>
+
+                <div class="mpl-top">
+            <!-- ppt = pp-top -->
+
+                    <div class="ppt-con">
+
+                        <div class="ppt-con-img">
+                            <img src="assets/icons/express-delivery.png" alt="">
+                        </div>
+                        <div class="ppt-con-tex">
+                            <span>Free Delivery</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ppt-con">
+
+                        <div class="ppt-con-img">
+                            <img src="assets/icons/security.png" alt="">
+                        </div>
+                        <div class="ppt-con-tex">
+                            <span>Secure Payments</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ppt-con">
+
+                        <div class="ppt-con-img">
+                            <img src="assets/icons/delivery-status.png" alt="">
+                        </div>
+                        <div class="ppt-con-tex">
+                            <span>Easy Returns</span>
+                        </div>
+
+                    </div>
+
+                    <div class="ppt-con">
+
+                        <div class="ppt-con-img">
+                            <img src="assets/icons/support.png" alt="">
+                        </div>
+                        <div class="ppt-con-tex">
+                            <span>24x7 Customer Support</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="product-pol">
+        <!-- pp = product-pol -->
+
+        <div class="pp-top">
+            <!-- ppt = pp-top -->
+
+            <div class="ppt-con">
+
+                <div class="ppt-con-img">
+                    <img src="assets/icons/express-delivery.png" alt="">
+                </div>
+                <div class="ppt-con-tex">
+                    <span>Free Delivery</span>
+                </div>
+
+            </div>
+
+            <div class="ppt-con">
+
+                <div class="ppt-con-img">
+                    <img src="assets/icons/security.png" alt="">
+                </div>
+                <div class="ppt-con-tex">
+                    <span>Secure Payments</span>
+                </div>
+
+            </div>
+
+            <div class="ppt-con">
+
+                <div class="ppt-con-img">
+                    <img src="assets/icons/delivery-status.png" alt="">
+                </div>
+                <div class="ppt-con-tex">
+                    <span>Easy Returns</span>
+                </div>
+
+            </div>
+
+            <div class="ppt-con">
+
+                <div class="ppt-con-img">
+                    <img src="assets/icons/support.png" alt="">
+                </div>
+                <div class="ppt-con-tex">
+                    <span>24x7 Customer Support</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+<!-- More Books Section -->
+ 
+    <section class="book-section">
+        <!-- bs = book-section -->
+
+        <div class="bs-hading">
+
+            <div class="bs-title">
+                <span class="bs-title-l">.</span>
+                <h2>More Kids Books</h2> 
+            </div>
+            
+        </div>
+
+        <div class="bs-main">
+
+            <div class="card bs-card">
+                <img src="assets/book images/kid1.jpg" class="card-img-top" >
+                <div>
+                    <p class="book-name">Diary of a Wimpy Kid : Wrecking Ball</p>
+                    <div class="price">
+                        <span class="price-a">₹189</span>
+                        <span class="price-b">₹373</span>
+                        <span class="price-c">70% off</span>
+                    </div>
+                    <a href="kids-prod1.html">
+                        <button class="bs-card-butt">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card bs-card">
+                <img src="assets/book images/kid2.jpg" class="card-img-top" >
+                <div>
+                    <p class="book-name">Diary of a Wimpy Kid : The Getaway</p>
+                    <div class="price">
+                        <span class="price-a">₹249</span>
+                        <span class="price-b">₹499</span>
+                        <span class="price-c">70% off</span>
+                    </div>
+                    <a href="kids-prod2.html">
+                        <button class="bs-card-butt">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card bs-card">
+                <img src="assets/book images/kid3.jpg" class="card-img-top" >
+                <div>
+                    <p class="book-name">Diary of a Wimpy Kid : Big Shot</p>
+                    <div class="price">
+                        <span class="price-a">₹189</span>
+                        <span class="price-b">₹373</span>
+                        <span class="price-c">70% off</span>
+                    </div>
+                    <a href="kids-prod3.html">
+                        <button class="bs-card-butt">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card bs-card">
+                <img src="assets/book images/kid4.jpg" class="card-img-top" >
+                <div>
+                    <p class="book-name">Diary of a wimpy kid : the long haul</p>
+                    <div class="price">
+                        <span class="price-a">₹299</span>
+                        <span class="price-b">₹499</span>
+                        <span class="price-c">70% off</span>
+                    </div>
+                    <a href="kids-prod4.html">
+                        <button class="bs-card-butt">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card bs-card">
+                <img src="assets/book images/kid5.jpg" class="card-img-top" >
+                <div>
+                    <p class="book-name">Diary Of A Wimpy Kid : The Deep End</p>
+                    <div class="price">
+                        <span class="price-a">₹189</span>
+                        <span class="price-b">₹373</span>
+                        <span class="price-c">70% off</span>
+                    </div>
+                    <a href="kids-prod5.html">
+                        <button class="bs-card-butt">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card bs-card">
+                <img src="assets/book images/kid6.jpg" class="card-img-top" >
+                <div>
+                    <p class="book-name">Dog Days (Diary of a Wimpy Kid book 4)</p>
+                    <div class="price">
+                        <span class="price-a">₹219</span>
+                        <span class="price-b">₹399</span>
+                        <span class="price-c">70% off</span>
+                    </div>
+                    <a href="kids-prod6.html">
+                        <button class="bs-card-butt">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+    </section>
+
+
+    
+
+        <!-- FOOTER -->
+    <footer >
+
+        <div class="footer">
+
+            <div class="footer-tex">
+
+                <h2>Customer Support</h2>
+                <p>Shipping</p>
+                <p>Returns</p>
+                <p>Contact Us</p>
+
+            </div>
+
+            <div class="footer-tex">
+
+                <h2>Category</h2>
+                <p>Motivational</p>
+                <p>Health & Wellness</p>
+                <p>Technology</p>
+                <p>Current Affairs</p>
+                <p>Kids Books</p>
+                <p>Self Help</p>
+
+                
+            </div>
+
+            <div class="footer-tex">
+
+                <h2>About Us</h2>
+                <p>Our Story</p>
+                <p>Carees</p>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                
+            </div>
+
+            <div class="footer-tex">
+
+                <h2>Follow Us</h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                
+                
+            </div>
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>
